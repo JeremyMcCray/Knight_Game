@@ -1,0 +1,23 @@
+[remap]
+
+importer="YATI"
+type="PackedScene"
+uid="uid://bhxjwpg56ekqu"
+path="res://.godot/imported/plat-3-rule2-applies variations.tmx-6bc671a836a9993ac7ff985d9fd34de3.tscn"
+
+[deps]
+
+source_file="res://Textures/Epic-Mountain/TiledMap Editor/Rules/plat-3-rule2-applies variations.tmx"
+dest_files=["res://.godot/imported/plat-3-rule2-applies variations.tmx-6bc671a836a9993ac7ff985d9fd34de3.tscn"]
+
+[params]
+
+use_tilemap_layers=false
+use_default_filter=false
+add_class_as_metadata=false
+add_id_as_metadata=false
+no_alternative_tiles=false
+map_wangset_to_terrain=false
+tiled_project_file=""
+post_processor=""
+save_tileset_to=""

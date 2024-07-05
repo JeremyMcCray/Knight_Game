@@ -1,0 +1,19 @@
+[gd_scene load_steps=5 format=3 uid="uid://g2inpcce2elc"]
+
+[ext_resource type="Script" path="res://Knight_State_Machine.gd" id="1_6yvby"]
+[ext_resource type="Script" path="res://State Machines/Knight_States/Seaching_room.gd" id="2_0crm5"]
+[ext_resource type="Script" path="res://State Machines/Knight_States/Healing_self.gd" id="3_khufd"]
+[ext_resource type="Script" path="res://State Machines/Choose_destination.gd" id="4_m05sk"]
+
+[node name="Knight_State_Machine" type="Node" node_paths=PackedStringArray("initial_state")]
+script = ExtResource("1_6yvby")
+initial_state = NodePath("Search_room")
+
+[node name="Search_room" type="Node" parent="."]
+script = ExtResource("2_0crm5")
+
+[node name="Healing_self" type="Node" parent="."]
+script = ExtResource("3_khufd")
+
+[node name="Choose_destination" type="Node" parent="."]
+script = ExtResource("4_m05sk")

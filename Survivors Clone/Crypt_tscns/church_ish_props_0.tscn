@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://5eiwnl7as8v1"]
+
+[ext_resource type="Texture2D" uid="uid://dc2pygumhmcgg" path="res://Textures/Epic-Mountain/Props/Static/Props-individual sprites/church-ish-props_0.png" id="1_7t7ag"]
+
+[node name="Church-ish-props0" type="Sprite2D"]
+position = Vector2(0, 12)
+texture = ExtResource("1_7t7ag")

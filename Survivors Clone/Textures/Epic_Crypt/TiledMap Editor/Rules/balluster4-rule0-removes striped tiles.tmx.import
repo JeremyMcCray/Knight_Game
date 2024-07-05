@@ -1,0 +1,23 @@
+[remap]
+
+importer="YATI"
+type="PackedScene"
+uid="uid://c4kfumiioqo2i"
+path="res://.godot/imported/balluster4-rule0-removes striped tiles.tmx-5c5a148709b755986940aa06b3f0288e.tscn"
+
+[deps]
+
+source_file="res://Textures/Epic_Crypt/TiledMap Editor/Rules/balluster4-rule0-removes striped tiles.tmx"
+dest_files=["res://.godot/imported/balluster4-rule0-removes striped tiles.tmx-5c5a148709b755986940aa06b3f0288e.tscn"]
+
+[params]
+
+use_tilemap_layers=false
+use_default_filter=false
+add_class_as_metadata=false
+add_id_as_metadata=false
+no_alternative_tiles=false
+map_wangset_to_terrain=false
+tiled_project_file=""
+post_processor=""
+save_tileset_to=""

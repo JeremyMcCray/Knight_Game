@@ -1,0 +1,23 @@
+[remap]
+
+importer="YATI"
+type="PackedScene"
+uid="uid://pf148bk0kdyh"
+path="res://.godot/imported/Prison Cells-rule0-erases all generated tiles and resets them to their initial state.tmx-ba08b1894ec0d07f9e2d3ea48720da22.tscn"
+
+[deps]
+
+source_file="res://Textures/Epic_OldPrison/TiledMap Editor New/Rules/Prison Cells-rule0-erases all generated tiles and resets them to their initial state.tmx"
+dest_files=["res://.godot/imported/Prison Cells-rule0-erases all generated tiles and resets them to their initial state.tmx-ba08b1894ec0d07f9e2d3ea48720da22.tscn"]
+
+[params]
+
+use_tilemap_layers=false
+use_default_filter=false
+add_class_as_metadata=false
+add_id_as_metadata=false
+no_alternative_tiles=false
+map_wangset_to_terrain=false
+tiled_project_file=""
+post_processor=""
+save_tileset_to=""

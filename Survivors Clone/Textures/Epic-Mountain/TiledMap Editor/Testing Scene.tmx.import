@@ -1,0 +1,23 @@
+[remap]
+
+importer="YATI"
+type="PackedScene"
+uid="uid://bf1wng5qa8cj6"
+path="res://.godot/imported/Testing Scene.tmx-4ba30c199725b6f42fc7e04de2122585.tscn"
+
+[deps]
+
+source_file="res://Textures/Epic-Mountain/TiledMap Editor/Testing Scene.tmx"
+dest_files=["res://.godot/imported/Testing Scene.tmx-4ba30c199725b6f42fc7e04de2122585.tscn"]
+
+[params]
+
+use_tilemap_layers=false
+use_default_filter=false
+add_class_as_metadata=false
+add_id_as_metadata=false
+no_alternative_tiles=false
+map_wangset_to_terrain=false
+tiled_project_file=""
+post_processor=""
+save_tileset_to=""

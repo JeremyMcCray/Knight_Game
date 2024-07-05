@@ -1,0 +1,21 @@
+[gd_scene load_steps=3 format=3 uid="uid://wujgsg3u6a5i"]
+
+[ext_resource type="Texture2D" uid="uid://ic8m8811ks38" path="res://Textures/Items/Weapons/ice_spear.png" id="1_0k6wd"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_0mv7h"]
+radius = 2.0
+height = 14.0
+
+[node name="IceSpear" type="Area2D"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 4
+visibility_layer = 4
+position = Vector2(-1, -2)
+shape = SubResource("CapsuleShape2D_0mv7h")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1, -2)
+rotation = 0.703368
+scale = Vector2(0.404, 0.467)
+texture = ExtResource("1_0k6wd")

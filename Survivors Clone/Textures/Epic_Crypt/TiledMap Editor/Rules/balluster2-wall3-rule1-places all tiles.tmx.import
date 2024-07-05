@@ -1,0 +1,23 @@
+[remap]
+
+importer="YATI"
+type="PackedScene"
+uid="uid://dw2e31sjh07rr"
+path="res://.godot/imported/balluster2-wall3-rule1-places all tiles.tmx-ace407872605e6cf93ed04b1359b5e27.tscn"
+
+[deps]
+
+source_file="res://Textures/Epic_Crypt/TiledMap Editor/Rules/balluster2-wall3-rule1-places all tiles.tmx"
+dest_files=["res://.godot/imported/balluster2-wall3-rule1-places all tiles.tmx-ace407872605e6cf93ed04b1359b5e27.tscn"]
+
+[params]
+
+use_tilemap_layers=false
+use_default_filter=false
+add_class_as_metadata=false
+add_id_as_metadata=false
+no_alternative_tiles=false
+map_wangset_to_terrain=false
+tiled_project_file=""
+post_processor=""
+save_tileset_to=""

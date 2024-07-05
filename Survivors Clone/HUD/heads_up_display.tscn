@@ -1,0 +1,241 @@
+[gd_scene load_steps=3 format=3 uid="uid://ci77car87v6em"]
+
+[ext_resource type="Texture2D" uid="uid://ik3abgx1wby1" path="res://Textures/Tiny Swords (Update 010)/UI/Banners/Carved_3Slides.png" id="1_i6n0y"]
+[ext_resource type="Texture2D" uid="uid://cum1u40u3rbw" path="res://Textures/HUD/Knight_potrait_purple_no_bg.png" id="1_xjycq"]
+
+[node name="Heads_up_display" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+offset_right = 781.0
+offset_bottom = 64.0
+
+[node name="Knight_Display" type="BoxContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(120, 40)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Knight_Display"]
+custom_minimum_size = Vector2(258, 144)
+layout_mode = 2
+texture = ExtResource("1_i6n0y")
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer/Knight_Display/TextureRect"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+offset_left = 17.0
+offset_top = 39.0
+offset_right = 106.0
+offset_bottom = 110.0
+texture = ExtResource("1_xjycq")
+expand_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/Knight_Display/TextureRect/TextureRect2"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+offset_left = 171.0
+offset_top = 1.0
+offset_right = 291.0
+offset_bottom = 163.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/text_highlight_h_padding = 0
+theme_override_font_sizes/normal_font_size = 20
+text = "Kills:
+
+Loot:
+
+Health: 100"
+fit_content = true
+scroll_active = false
+autowrap_mode = 2
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="HBoxContainer/Knight_Display/TextureRect/TextureRect2"]
+custom_minimum_size = Vector2(20, 20)
+offset_left = 89.0
+offset_top = 16.0
+offset_right = 219.0
+offset_bottom = 95.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[center]Action:
+Opening Chest[/center]
+	 "
+fit_content = true
+scroll_active = false
+autowrap_mode = 2
+
+[node name="Knight_Display2" type="BoxContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(120, 40)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Knight_Display2"]
+custom_minimum_size = Vector2(258, 144)
+layout_mode = 2
+texture = ExtResource("1_i6n0y")
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer/Knight_Display2/TextureRect"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+offset_left = 17.0
+offset_top = 39.0
+offset_right = 106.0
+offset_bottom = 110.0
+texture = ExtResource("1_xjycq")
+expand_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/Knight_Display2/TextureRect/TextureRect2"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+offset_left = 171.0
+offset_top = 1.0
+offset_right = 291.0
+offset_bottom = 163.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/text_highlight_h_padding = 0
+theme_override_font_sizes/normal_font_size = 20
+text = "Kills:
+
+Loot:
+
+Health: 100"
+fit_content = true
+scroll_active = false
+autowrap_mode = 2
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="HBoxContainer/Knight_Display2/TextureRect/TextureRect2"]
+custom_minimum_size = Vector2(20, 20)
+offset_left = 89.0
+offset_top = 16.0
+offset_right = 219.0
+offset_bottom = 95.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[center]Action:
+Opening Chest[/center]
+	 "
+fit_content = true
+scroll_active = false
+autowrap_mode = 2
+
+[node name="Knight_Display3" type="BoxContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(120, 40)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Knight_Display3"]
+custom_minimum_size = Vector2(258, 144)
+layout_mode = 2
+texture = ExtResource("1_i6n0y")
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer/Knight_Display3/TextureRect"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+offset_left = 17.0
+offset_top = 39.0
+offset_right = 106.0
+offset_bottom = 110.0
+texture = ExtResource("1_xjycq")
+expand_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/Knight_Display3/TextureRect/TextureRect2"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+offset_left = 171.0
+offset_top = 1.0
+offset_right = 291.0
+offset_bottom = 163.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/text_highlight_h_padding = 0
+theme_override_font_sizes/normal_font_size = 20
+text = "Kills:
+
+Loot:
+
+Health: 100"
+fit_content = true
+scroll_active = false
+autowrap_mode = 2
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="HBoxContainer/Knight_Display3/TextureRect/TextureRect2"]
+custom_minimum_size = Vector2(20, 20)
+offset_left = 89.0
+offset_top = 16.0
+offset_right = 219.0
+offset_bottom = 95.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[center]Action:
+Opening Chest[/center]
+	 "
+fit_content = true
+scroll_active = false
+autowrap_mode = 2
+
+[node name="Knight_Display4" type="BoxContainer" parent="HBoxContainer"]
+custom_minimum_size = Vector2(120, 40)
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="HBoxContainer/Knight_Display4"]
+custom_minimum_size = Vector2(258, 144)
+layout_mode = 2
+texture = ExtResource("1_i6n0y")
+
+[node name="TextureRect2" type="TextureRect" parent="HBoxContainer/Knight_Display4/TextureRect"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+offset_left = 17.0
+offset_top = 39.0
+offset_right = 106.0
+offset_bottom = 110.0
+texture = ExtResource("1_xjycq")
+expand_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="HBoxContainer/Knight_Display4/TextureRect/TextureRect2"]
+custom_minimum_size = Vector2(20, 20)
+layout_mode = 2
+offset_left = 171.0
+offset_top = 1.0
+offset_right = 291.0
+offset_bottom = 163.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_constants/text_highlight_h_padding = 0
+theme_override_font_sizes/normal_font_size = 20
+text = "Kills:
+
+Loot:
+
+Health: 100"
+fit_content = true
+scroll_active = false
+autowrap_mode = 2
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="HBoxContainer/Knight_Display4/TextureRect/TextureRect2"]
+custom_minimum_size = Vector2(20, 20)
+offset_left = 89.0
+offset_top = 16.0
+offset_right = 219.0
+offset_bottom = 95.0
+scale = Vector2(0.5, 0.5)
+theme_override_colors/default_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "[center]Action:
+Opening Chest[/center]
+	 "
+fit_content = true
+scroll_active = false
+autowrap_mode = 2

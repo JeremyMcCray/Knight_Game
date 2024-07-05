@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bsaemc5erjnuu"]
+
+[ext_resource type="Texture2D" uid="uid://d1fw1g2qh3r43" path="res://Textures/Epic-Mountain/Props/Static/Props-individual sprites/boss-carpet.png" id="1_vf8nm"]
+
+[node name="Boss-carpet" type="Sprite2D"]
+texture = ExtResource("1_vf8nm")

@@ -1,0 +1,23 @@
+[remap]
+
+importer="YATI"
+type="PackedScene"
+uid="uid://c8hq0yy1p3ppf"
+path="res://.godot/imported/wall-2-rule1-places all tiles.tmx-9d6785c01379c9836347399e99d112fe.tscn"
+
+[deps]
+
+source_file="res://Textures/Epic_OldPrison/TiledMap Editor New/Rules/wall-2-rule1-places all tiles.tmx"
+dest_files=["res://.godot/imported/wall-2-rule1-places all tiles.tmx-9d6785c01379c9836347399e99d112fe.tscn"]
+
+[params]
+
+use_tilemap_layers=false
+use_default_filter=false
+add_class_as_metadata=false
+add_id_as_metadata=false
+no_alternative_tiles=false
+map_wangset_to_terrain=false
+tiled_project_file=""
+post_processor=""
+save_tileset_to=""

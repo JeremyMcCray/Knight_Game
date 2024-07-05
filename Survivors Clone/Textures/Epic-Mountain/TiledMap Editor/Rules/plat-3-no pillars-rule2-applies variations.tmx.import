@@ -1,0 +1,23 @@
+[remap]
+
+importer="YATI"
+type="PackedScene"
+uid="uid://dv4reltme4e5f"
+path="res://.godot/imported/plat-3-no pillars-rule2-applies variations.tmx-ca95bb222ed19c28ca0f9e74e529c045.tscn"
+
+[deps]
+
+source_file="res://Textures/Epic-Mountain/TiledMap Editor/Rules/plat-3-no pillars-rule2-applies variations.tmx"
+dest_files=["res://.godot/imported/plat-3-no pillars-rule2-applies variations.tmx-ca95bb222ed19c28ca0f9e74e529c045.tscn"]
+
+[params]
+
+use_tilemap_layers=false
+use_default_filter=false
+add_class_as_metadata=false
+add_id_as_metadata=false
+no_alternative_tiles=false
+map_wangset_to_terrain=false
+tiled_project_file=""
+post_processor=""
+save_tileset_to=""

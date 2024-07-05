@@ -1,0 +1,2 @@
+﻿52840
+C:/Users/Keems/AppData/Roaming/godotenv/godot/bin/godot.exe

@@ -1,0 +1,23 @@
+[remap]
+
+importer="YATI"
+type="PackedScene"
+uid="uid://e8r8xosovepm"
+path="res://.godot/imported/wall1-4-rule2-applies variations.tmx-56f8b9c3653a5d37cc0c414ce41621f6.tscn"
+
+[deps]
+
+source_file="res://Textures/Epic-Mountain/TiledMap Editor/Rules/wall1-4-rule2-applies variations.tmx"
+dest_files=["res://.godot/imported/wall1-4-rule2-applies variations.tmx-56f8b9c3653a5d37cc0c414ce41621f6.tscn"]
+
+[params]
+
+use_tilemap_layers=false
+use_default_filter=false
+add_class_as_metadata=false
+add_id_as_metadata=false
+no_alternative_tiles=false
+map_wangset_to_terrain=false
+tiled_project_file=""
+post_processor=""
+save_tileset_to=""

@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfbwt40da5wt3"]
+
+[ext_resource type="Texture2D" uid="uid://c6la6dgbecd1r" path="res://Textures/TileSet-PixelTopDown/TX Props.png" id="1_e47qg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fa8lk"]
+size = Vector2(44, 76)
+
+[node name="Healing_shrine" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(12, -10)
+texture = ExtResource("1_e47qg")
+hframes = 7
+vframes = 5
+frame = 6
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -4)
+shape = SubResource("RectangleShape2D_fa8lk")

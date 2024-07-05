@@ -1,0 +1,23 @@
+[remap]
+
+importer="YATI"
+type="PackedScene"
+uid="uid://wosujm3rjsvp"
+path="res://.godot/imported/wall-2-rule0-erases all generated tiles and resets them to their initial state.tmx-8fd71b7ced768df9d986ff85bf573069.tscn"
+
+[deps]
+
+source_file="res://Textures/Epic_Crypt/TiledMap Editor/Rules/wall-2-rule0-erases all generated tiles and resets them to their initial state.tmx"
+dest_files=["res://.godot/imported/wall-2-rule0-erases all generated tiles and resets them to their initial state.tmx-8fd71b7ced768df9d986ff85bf573069.tscn"]
+
+[params]
+
+use_tilemap_layers=false
+use_default_filter=false
+add_class_as_metadata=false
+add_id_as_metadata=false
+no_alternative_tiles=false
+map_wangset_to_terrain=false
+tiled_project_file=""
+post_processor=""
+save_tileset_to=""

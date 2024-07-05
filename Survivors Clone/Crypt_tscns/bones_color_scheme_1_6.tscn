@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cwb7ecrixttdj"]
+
+[ext_resource type="Texture2D" uid="uid://bwhk7c18o4lcv" path="res://Textures/Epic_OldPrison/Props/atlas props - individual sprites/bones - color scheme 1 - 6.png" id="1_4rjtu"]
+
+[node name="Bones-ColorScheme1-6" type="Sprite2D"]
+texture = ExtResource("1_4rjtu")

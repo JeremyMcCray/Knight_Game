@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://c500scsj7v4x0"]
+
+[ext_resource type="Texture2D" uid="uid://c4fyx0gg1l65g" path="res://Textures/Epic-Mountain/Props/Static/Props-individual sprites/pots5_8.png" id="1_rle88"]
+
+[node name="Pots58" type="Sprite2D"]
+texture = ExtResource("1_rle88")

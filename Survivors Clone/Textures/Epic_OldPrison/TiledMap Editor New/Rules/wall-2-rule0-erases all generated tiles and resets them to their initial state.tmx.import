@@ -1,0 +1,23 @@
+[remap]
+
+importer="YATI"
+type="PackedScene"
+uid="uid://dttugkchta23w"
+path="res://.godot/imported/wall-2-rule0-erases all generated tiles and resets them to their initial state.tmx-f63fc63f7ed50d4059785d82695cf55b.tscn"
+
+[deps]
+
+source_file="res://Textures/Epic_OldPrison/TiledMap Editor New/Rules/wall-2-rule0-erases all generated tiles and resets them to their initial state.tmx"
+dest_files=["res://.godot/imported/wall-2-rule0-erases all generated tiles and resets them to their initial state.tmx-f63fc63f7ed50d4059785d82695cf55b.tscn"]
+
+[params]
+
+use_tilemap_layers=false
+use_default_filter=false
+add_class_as_metadata=false
+add_id_as_metadata=false
+no_alternative_tiles=false
+map_wangset_to_terrain=false
+tiled_project_file=""
+post_processor=""
+save_tileset_to=""

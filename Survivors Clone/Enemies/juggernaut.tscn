@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://dwb7i18kyb2qd"]
+
+[ext_resource type="Script" path="res://Enemies/juggernaut.gd" id="1_0gkir"]
+[ext_resource type="Texture2D" uid="uid://xgx71dglh1ln" path="res://Textures/Enemy/juggernaut.png" id="2_mnskv"]
+[ext_resource type="PackedScene" uid="uid://b05knfme5xit2" path="res://State Machines/basic_choose_and_follow_enemy_state_machine.tscn" id="3_gq8j2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_w2t7v"]
+size = Vector2(34, 32)
+
+[node name="Juggernaut" type="CharacterBody2D" groups=["enemy"]]
+collision_layer = 4
+collision_mask = 4
+motion_mode = 1
+script = ExtResource("1_0gkir")
+
+[node name="JuggernautSprite" type="Sprite2D" parent="."]
+position = Vector2(-15, -2)
+texture = ExtResource("2_mnskv")
+hframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 5
+visibility_layer = 4
+position = Vector2(-16, -2)
+shape = SubResource("RectangleShape2D_w2t7v")
+
+[node name="Basic_choose_and_follow_enemy_state_machine" parent="." instance=ExtResource("3_gq8j2")]

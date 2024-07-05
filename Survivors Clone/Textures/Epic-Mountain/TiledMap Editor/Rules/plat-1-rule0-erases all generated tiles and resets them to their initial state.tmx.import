@@ -1,0 +1,23 @@
+[remap]
+
+importer="YATI"
+type="PackedScene"
+uid="uid://bc8rx1nasyhk"
+path="res://.godot/imported/plat-1-rule0-erases all generated tiles and resets them to their initial state.tmx-95076aa947516bee44b74ce7f7db21e8.tscn"
+
+[deps]
+
+source_file="res://Textures/Epic-Mountain/TiledMap Editor/Rules/plat-1-rule0-erases all generated tiles and resets them to their initial state.tmx"
+dest_files=["res://.godot/imported/plat-1-rule0-erases all generated tiles and resets them to their initial state.tmx-95076aa947516bee44b74ce7f7db21e8.tscn"]
+
+[params]
+
+use_tilemap_layers=false
+use_default_filter=false
+add_class_as_metadata=false
+add_id_as_metadata=false
+no_alternative_tiles=false
+map_wangset_to_terrain=false
+tiled_project_file=""
+post_processor=""
+save_tileset_to=""

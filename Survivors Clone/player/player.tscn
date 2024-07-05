@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://bh5orx7ma5ut0"]
+
+[ext_resource type="Script" path="res://player/player.gd" id="1_7t3yn"]
+[ext_resource type="Texture2D" uid="uid://4qu8jb4ms4jq" path="res://Textures/Player/player_sprite.png" id="1_d82q1"]
+[ext_resource type="Script" path="res://player/Camera_Zoom.gd" id="3_jyktx"]
+[ext_resource type="PackedScene" uid="uid://ci77car87v6em" path="res://HUD/heads_up_display.tscn" id="4_atri2"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_1cvec"]
+radius = 8.0
+
+[node name="Player" type="CharacterBody2D"]
+position = Vector2(7, -16)
+script = ExtResource("1_7t3yn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
+texture = ExtResource("1_d82q1")
+hframes = 2
+
+[node name="Camera2D" type="Camera2D" parent="."]
+script = ExtResource("3_jyktx")
+
+[node name="Heads_up_display" parent="Camera2D" instance=ExtResource("4_atri2")]
+light_mask = 528
+visibility_layer = 528
+z_index = 20
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -521.0
+offset_top = 212.0
+offset_right = -521.0
+offset_bottom = 212.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(2, 1)
+shape = SubResource("CapsuleShape2D_1cvec")
+disabled = true

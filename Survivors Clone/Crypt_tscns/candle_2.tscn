@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://rmfa8bjoj5x3"]
+
+[ext_resource type="Texture2D" uid="uid://bu1f15gfw4se2" path="res://Textures/Epic_Crypt/Props/atlas props - individual sprites/candle 2.png" id="1_nryld"]
+
+[node name="Candle2" type="Sprite2D"]
+texture = ExtResource("1_nryld")

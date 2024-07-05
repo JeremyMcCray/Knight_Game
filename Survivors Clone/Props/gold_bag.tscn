@@ -1,0 +1,68 @@
+[gd_scene load_steps=7 format=3 uid="uid://dw7kjcc73ny6c"]
+
+[ext_resource type="Script" path="res://Scripts/Gold_bag.gd" id="1_a0v3m"]
+[ext_resource type="Texture2D" uid="uid://djhyvrp4pely1" path="res://Textures/Tiny Swords (Update 010)/Resources/Resources/G_Spawn.png" id="2_nkp1h"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_jhm3u"]
+radius = 11.4018
+
+[sub_resource type="Animation" id="Animation_pg1hk"]
+resource_name = "gold_spawn"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3, 4, 5, 6]
+}
+
+[sub_resource type="Animation" id="Animation_xdw5c"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_aj8c8"]
+_data = {
+"RESET": SubResource("Animation_xdw5c"),
+"gold_spawn": SubResource("Animation_pg1hk")
+}
+
+[node name="Gold_bag" type="Area2D"]
+collision_layer = 4
+collision_mask = 4
+script = ExtResource("1_a0v3m")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(2.25, 8)
+scale = Vector2(0.386719, 0.296875)
+texture = ExtResource("2_nkp1h")
+hframes = 7
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 4
+visibility_layer = 4
+position = Vector2(5, 11)
+shape = SubResource("CircleShape2D_jhm3u")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_aj8c8")
+}
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

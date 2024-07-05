@@ -1,0 +1,23 @@
+[remap]
+
+importer="YATI"
+type="PackedScene"
+uid="uid://cyd1og67lo3u8"
+path="res://.godot/imported/Prison Cells-rule2-applies variations.tmx-f8787b665c7107c1a1af15433799f5a7.tscn"
+
+[deps]
+
+source_file="res://Textures/Epic_OldPrison/TiledMap Editor New/Rules/Prison Cells-rule2-applies variations.tmx"
+dest_files=["res://.godot/imported/Prison Cells-rule2-applies variations.tmx-f8787b665c7107c1a1af15433799f5a7.tscn"]
+
+[params]
+
+use_tilemap_layers=false
+use_default_filter=false
+add_class_as_metadata=false
+add_id_as_metadata=false
+no_alternative_tiles=false
+map_wangset_to_terrain=false
+tiled_project_file=""
+post_processor=""
+save_tileset_to=""

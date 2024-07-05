@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b658yq53hecpx"]
+
+[ext_resource type="Texture2D" uid="uid://b1pjhfli4cs8h" path="res://Textures/Epic_Crypt/Props/atlas props - individual sprites/statue with support 5.png" id="1_5tkpd"]
+
+[node name="Statue_shield" type="Node2D"]
+
+[node name="StatueWithSupport5" type="Sprite2D" parent="."]
+texture = ExtResource("1_5tkpd")
+offset = Vector2(16, 4)

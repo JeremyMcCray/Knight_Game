@@ -1,0 +1,24 @@
+[gd_scene load_steps=5 format=3 uid="uid://3mtwg0q0hm2r"]
+
+[ext_resource type="Script" path="res://Scripts/Fog.gd" id="1_ngb2l"]
+[ext_resource type="Texture2D" uid="uid://1yn0mcg27p0u" path="res://Textures/Light.png" id="2_xkie1"]
+[ext_resource type="Texture2D" uid="uid://cs3h8g4rs0yad" path="res://Textures/dirt_full_new.png" id="3_1pdcf"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_tj70x"]
+blend_mode = 3
+
+[node name="Game" type="Node2D" node_paths=PackedStringArray("fog")]
+script = ExtResource("1_ngb2l")
+fog = NodePath("fog")
+LightTexture = ExtResource("2_xkie1")
+
+[node name="fog" type="Sprite2D" parent="."]
+light_mask = 3
+visibility_layer = 3
+material = SubResource("CanvasItemMaterial_tj70x")
+centered = false
+
+[node name="bg" type="Sprite2D" parent="."]
+position = Vector2(676.5, 358.5)
+scale = Vector2(43.2813, 23.4063)
+texture = ExtResource("3_1pdcf")

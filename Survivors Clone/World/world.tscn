@@ -1,0 +1,71 @@
+[gd_scene load_steps=11 format=3 uid="uid://o34bmtwqoj2i"]
+
+[ext_resource type="Script" path="res://World/World_Start_script.gd" id="1_bqlss"]
+[ext_resource type="PackedScene" uid="uid://bh5orx7ma5ut0" path="res://player/player.tscn" id="2_lox4c"]
+[ext_resource type="Script" path="res://World/Knight_spawner.gd" id="5_ac08i"]
+[ext_resource type="Script" path="res://World/Juggernaut_spawner.gd" id="5_qkgkq"]
+[ext_resource type="PackedScene" uid="uid://ckvksksjri1ax" path="res://Scripts/kill_handler.tscn" id="7_r036m"]
+[ext_resource type="Script" path="res://World/Gold_spawner.gd" id="10_kgdx0"]
+[ext_resource type="PackedScene" uid="uid://deeq0jsia2una" path="res://Crypt_tscns/Prayer_room_objects.tscn" id="11_momk3"]
+[ext_resource type="Texture2D" uid="uid://1yn0mcg27p0u" path="res://Textures/Light.png" id="13_6tbjn"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fbcrp"]
+size = Vector2(1117, 799)
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_vwqq2"]
+blend_mode = 3
+
+[node name="World" type="Node2D" node_paths=PackedStringArray("fog")]
+script = ExtResource("1_bqlss")
+fog = NodePath("fog")
+LightTexture = ExtResource("13_6tbjn")
+
+[node name="Player" parent="." groups=["attack", "player"] instance=ExtResource("2_lox4c")]
+position = Vector2(583, 398)
+scale = Vector2(1.15284, 1.77489)
+
+[node name="Knight_spawner" type="Node" parent="."]
+script = ExtResource("5_ac08i")
+
+[node name="Knight_Spawn_Timer" type="Timer" parent="Knight_spawner"]
+wait_time = 10.0
+autostart = true
+
+[node name="Skeleton_spawner" type="Node" parent="."]
+script = ExtResource("5_qkgkq")
+
+[node name="Skeleton_Spawn_Timer" type="Timer" parent="Skeleton_spawner"]
+wait_time = 5.0
+autostart = true
+
+[node name="Kills_handler" parent="." instance=ExtResource("7_r036m")]
+
+[node name="Map_Size" type="Area2D" parent="." groups=["Map_Size"]]
+collision_layer = 0
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Map_Size"]
+position = Vector2(560, 400)
+shape = SubResource("RectangleShape2D_fbcrp")
+
+[node name="Gold_spawner" type="Node" parent="."]
+script = ExtResource("10_kgdx0")
+
+[node name="Timer" type="Timer" parent="Gold_spawner"]
+wait_time = 0.5
+
+[node name="fog" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.219608)
+light_mask = 2
+visibility_layer = 2
+material = SubResource("CanvasItemMaterial_vwqq2")
+centered = false
+
+[node name="Prayer_room_objects" parent="." instance=ExtResource("11_momk3")]
+z_index = -1
+position = Vector2(0, 0)
+
+[connection signal="child_entered_tree" from="Knight_spawner" to="." method="_on_knight_spawner_child_entered_tree"]
+[connection signal="timeout" from="Knight_spawner/Knight_Spawn_Timer" to="Knight_spawner" method="_on_timer_timeout"]
+[connection signal="timeout" from="Skeleton_spawner/Skeleton_Spawn_Timer" to="Skeleton_spawner" method="_on_timer_timeout"]
+[connection signal="timeout" from="Gold_spawner/Timer" to="Gold_spawner" method="_on_timer_timeout"]

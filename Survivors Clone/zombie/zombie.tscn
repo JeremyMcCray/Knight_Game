@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=3 uid="uid://da41fp2g3rilv"]
+
+[ext_resource type="Texture2D" uid="uid://bmj6elnrrfaey" path="res://Textures/Enemy/kolbold_weak.png" id="1_1dwxs"]
+[ext_resource type="Script" path="res://zombie/zombie.gd" id="1_dj4uc"]
+[ext_resource type="PackedScene" uid="uid://dx05go1o5gi8g" path="res://signals/signal_my_killer.tscn" id="2_gwk31"]
+[ext_resource type="PackedScene" uid="uid://b05knfme5xit2" path="res://State Machines/basic_choose_and_follow_enemy_state_machine.tscn" id="7_3i43a"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4b0ju"]
+radius = 9.0
+height = 26.0
+
+[node name="Enemy" type="CharacterBody2D" node_paths=PackedStringArray("_sprite", "collision_shape") groups=["enemy"]]
+collision_layer = 4
+collision_mask = 4
+motion_mode = 1
+script = ExtResource("1_dj4uc")
+_sprite = NodePath("Sprite2D")
+collision_shape = NodePath("CollisionShape2D")
+target_name = "knight"
+
+[node name="signal_my_killer" parent="." instance=ExtResource("2_gwk31")]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-15, -2)
+texture = ExtResource("1_1dwxs")
+hframes = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+light_mask = 5
+visibility_layer = 4
+position = Vector2(-14, 1)
+shape = SubResource("CapsuleShape2D_4b0ju")
+
+[node name="Basic_choose_and_follow_enemy_state_machine" parent="." instance=ExtResource("7_3i43a")]
+
+[connection signal="my_killer" from="signal_my_killer" to="." method="_on_signal_my_killer_my_killer"]

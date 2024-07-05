@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://b05knfme5xit2"]
+
+[ext_resource type="Script" path="res://State Machines/basic_choose_and_follow_enemy_state_machine.gd" id="1_jsp4y"]
+[ext_resource type="Script" path="res://Scripts/Choose_enemy.gd" id="1_q5jnw"]
+[ext_resource type="Script" path="res://Scripts/Enemy_follow.gd" id="2_fff0p"]
+
+[node name="Basic_choose_and_follow_enemy_state_machine" type="Node" node_paths=PackedStringArray("initial_state")]
+script = ExtResource("1_jsp4y")
+initial_state = NodePath("Choose_enemy")
+
+[node name="Choose_enemy" type="Node" parent="."]
+script = ExtResource("1_q5jnw")
+
+[node name="Follow_enemy" type="Node" parent="."]
+script = ExtResource("2_fff0p")

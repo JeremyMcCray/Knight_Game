@@ -1,0 +1,23 @@
+[remap]
+
+importer="YATI"
+type="PackedScene"
+uid="uid://cu2xq12yr44fx"
+path="res://.godot/imported/balluster2-wall3-rule2-dead ends and variations.tmx-e8e02d892bd9ccbdc39dd5730cba3f95.tscn"
+
+[deps]
+
+source_file="res://Textures/Epic_Crypt/TiledMap Editor/Rules/balluster2-wall3-rule2-dead ends and variations.tmx"
+dest_files=["res://.godot/imported/balluster2-wall3-rule2-dead ends and variations.tmx-e8e02d892bd9ccbdc39dd5730cba3f95.tscn"]
+
+[params]
+
+use_tilemap_layers=false
+use_default_filter=false
+add_class_as_metadata=false
+add_id_as_metadata=false
+no_alternative_tiles=false
+map_wangset_to_terrain=false
+tiled_project_file=""
+post_processor=""
+save_tileset_to=""

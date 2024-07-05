@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://ci8yvr8i4xstv"]
+
+[ext_resource type="Texture2D" uid="uid://cq730jb1s6an" path="res://Textures/Epic-Mountain/Props/Static/Props-individual sprites/church-ish-props_book.png" id="1_nw1il"]
+
+[node name="Church-ish-propsBook" type="Sprite2D"]
+texture = ExtResource("1_nw1il")

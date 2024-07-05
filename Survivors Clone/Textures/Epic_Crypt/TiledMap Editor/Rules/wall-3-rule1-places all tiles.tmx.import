@@ -1,0 +1,23 @@
+[remap]
+
+importer="YATI"
+type="PackedScene"
+uid="uid://b3enkxok36t72"
+path="res://.godot/imported/wall-3-rule1-places all tiles.tmx-37dab5c65bb527b458cb081657ecc0dd.tscn"
+
+[deps]
+
+source_file="res://Textures/Epic_Crypt/TiledMap Editor/Rules/wall-3-rule1-places all tiles.tmx"
+dest_files=["res://.godot/imported/wall-3-rule1-places all tiles.tmx-37dab5c65bb527b458cb081657ecc0dd.tscn"]
+
+[params]
+
+use_tilemap_layers=false
+use_default_filter=false
+add_class_as_metadata=false
+add_id_as_metadata=false
+no_alternative_tiles=false
+map_wangset_to_terrain=false
+tiled_project_file=""
+post_processor=""
+save_tileset_to=""
